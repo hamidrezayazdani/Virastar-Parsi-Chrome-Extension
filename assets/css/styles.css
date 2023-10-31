@@ -1,0 +1,96 @@
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazirmatn-Regular.woff2");
+}
+
+html,
+body {
+  resize: horizontal;
+  overflow: auto;
+}
+
+body {
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0;
+  background-color: whitesmoke;
+  transition: filter 0.3s;
+}
+
+* {
+  font-family: vazir, sans-serif;
+}
+
+textarea {
+  outline: none;
+  border-radius: 5px;
+  border: gray solid 1px;
+  padding: 5px 10px;
+  width: calc(100% - 22px);
+  margin-top: -5px;
+  resize: none;
+  box-shadow: 0 0 7px #d3d3d3;
+  transition: all ease-in-out .2s;
+}
+
+textarea:active,
+textarea:focus {
+  border-color: 345de5;
+  box-shadow: 0 0 7px #345de5;
+}
+
+.main-content {
+  padding: 15px;
+}
+
+header img {
+  margin: 8px -16px 0 -2px;
+}
+
+.goto-website {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#copy-btn {
+  border-radius: 5px;
+  padding: 13px 0;
+  border: none;
+  color: #fff;
+  background-color: #345de5;
+  font-family: 'vazir';
+  font-size: 17px;
+  transition: 0.3s;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#copy-btn:hover {
+  background-color: #2246b9;
+}
+
+#copy-btn.error {
+  background-color: #e53144;
+}
+
+#copy-btn.success {
+  background-color: #00b14d;
+}
+
+footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+footer a {
+  color: #345de5;
+  font-weight: bold;
+  text-decoration: none;
+}
